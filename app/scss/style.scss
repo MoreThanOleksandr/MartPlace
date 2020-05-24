@@ -1,0 +1,140 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "glob";
+
+// Header
+.header {
+    background-color: #eef1f3;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    &-logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+        }
+        font-weight: 700;
+        font-size: 30px;
+        span {
+            color: $blue;
+        }
+    }
+    &-btn {
+        color: #fff;
+        background-color: $blue;
+        margin-left: auto;
+        margin-right: 50px;
+        padding: 7px 16px 5px;
+        border-radius: 18px;
+    }
+    &-bar {
+        margin-right: 50px;
+        a {
+            position: relative;
+            span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                min-height: 22px;
+                min-width: 22px;
+                color: #fff;
+                background-color: #ff6a6c;
+                border-radius: 50%;
+                top: -15px;
+                right: -10px;
+                font-weight: 500;
+            }
+            svg {
+                path {
+                    fill: #7e8fa1;
+                }
+            }
+        }
+        a+a{
+            margin-left: 33px;
+        }
+    }
+    .user__info{
+        display: flex;
+        align-items: center;
+        &-photo{
+            width: 50px;
+            height: 50px;
+            background-image: url(../images/user-photo.jpg);
+            @include bg_pack;
+            border-radius: 50%;
+        }
+        &-name{
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 20px;
+            span{
+                color: $blue;
+                display: block;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.header__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+    .header__menu{
+        li{
+            display: inline-block;
+            a{
+                font-size: 15px;
+                color: #333333;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            &+li{
+                margin-left: 30px;
+            }
+        }
+    }
+    .header__search{
+        position: relative;
+        input{
+            width: 360px;
+            border: 1px solid #d9dfe5;
+            padding: 10px 90px 10px 20px;
+            border-radius: 20px;
+            outline: none;
+            &::placeholder{
+                color: #898f96;
+            }
+        }
+        button{
+            outline: none;
+            position: absolute;
+            right: 0;
+            background-color: $blue;
+            border: none;
+            border-radius: 20px;
+            max-width: 70px;
+            width: 100%;
+            height: 37px;
+            svg{
+                width: 16px;
+                height: 17px;
+                path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+
+@import "media";
