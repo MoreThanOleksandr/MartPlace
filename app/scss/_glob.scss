@@ -29,6 +29,7 @@ footer{
 a{
     display: inline-block;
     text-decoration: none;
+    color: #f3f3f8;
 }
 ul,
 li{
@@ -38,13 +39,14 @@ li{
 }
 body{
     font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    color: #000;
 }
 
 .container{
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px; 
 }
