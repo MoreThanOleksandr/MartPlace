@@ -1,0 +1,2 @@
+[0526/012540.248:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[0526/012541.250:ERROR:exception_snapshot_win.cc(98)] thread ID 11176 not found in process

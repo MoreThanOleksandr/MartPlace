@@ -252,8 +252,6 @@
     }
 }
 
-
-
 .features {
     padding: 120px 0;
 }
@@ -273,7 +271,7 @@
         font-size: 24px;
         margin-bottom: 30px;
     }
-    p{
+    p {
         line-height: 30px;
     }
     &:hover {
@@ -281,4 +279,135 @@
     }
 }
 
+//      features slider
+
+.features-slider {
+    background-color: #eff1f5;
+    padding: 120px 0;
+}
+
+.features-slider-title{
+    div{
+        width: 110px;
+        height: 45px;
+        background-color: $purple;
+        border-radius: 25px;
+    }
+}
+
+.features-product {
+    display: flex !important;
+    justify-content: space-between;
+    background-color: #fff;
+    &__image {
+        max-width: 555px;
+        height: 450px;
+        @include bg_pack;
+    }
+    &__info {
+        padding: 50px 50px 20px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    &__subtitle-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 15px;
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            @include bg_pack;
+            display: inline-block;
+            margin-right: 7px;
+        }
+    }
+    &__theme{
+        padding-left: 25px;
+        color: #7347c1;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/icons/wordpress.png);
+            @include bg_pack;
+        }
+    }
+    &__text{
+        line-height: 30px;
+        margin-top: 19px;
+        margin-bottom: 34px;
+    }
+
+    &__link-box{
+        padding-bottom: 45px;
+        border-bottom: 1px solid #ececec;
+        a{
+            font-size: 15px;
+            line-height: 30px;
+            color: $grey;
+            background-color: #f1f3f6;
+            border-radius: 12px;
+            padding: 0 20px;
+            &+a{
+                margin-left: 3px;
+            }
+        }
+    }
+    &__price-box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 23px;
+        font-size: 15px;
+        position: relative;
+    }
+    &__price{
+        color: #fff;
+        
+        font-weight: 500;
+        background-color: $blue;
+        padding: 5px 18px;
+        border-radius: 14px;
+        margin-right: 20px;
+    }
+    &__likes{
+        svg{
+            margin-right: 3px;
+        }
+        margin-right: 20px;
+    }
+    &__buys{
+        color: $blue;
+        svg{
+            margin-right: 3px;
+        }
+    }
+}
+.rate__star{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.slider-arrows{
+    position: absolute;
+    top: -113px;
+    right: 101px;
+    cursor: pointer;
+    &__right{
+        right: 51px;
+    }
+}
 @import "media";
