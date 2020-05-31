@@ -9,4 +9,6 @@ $(function(){
         starWidth: "12px",
         readOnly: true
     });
+
+    var mixer = mixitup('.newest__products-inner');
 })
