@@ -4,6 +4,12 @@ $(function(){
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/chevron-left.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/chevron-right.svg" alt="">',
     });
+    $('.feed-slider__inner').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/chevron-left.svg" alt="">',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/chevron-right.svg" alt="">',
+    });
     $('.rate__star').rateYo({
         rating: 4.5,
         starWidth: "12px",
