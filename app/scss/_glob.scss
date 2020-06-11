@@ -60,6 +60,7 @@ textarea {
 }
 
 button {
+    padding: 0;
     outline: none;
     border: none;
     background-color: transparent;
@@ -120,13 +121,112 @@ button {
     margin-bottom: 50px;
 }
 
+
+//      search
+.search{
+    background: rgb(13,62,242);
+    background: linear-gradient(90deg,rgba(102,30,144,1) 0%, rgba(64,48,201,1) 46%,rgba(13,62,242,1)   90%);
+    padding: 85px 0 30px;
+}
+.search__inner{
+    text-align: center;
+    form{
+        margin: 0 auto;
+        max-width: 555px;
+        width: 100%;
+        position: relative;
+        input{
+            width: 100%;
+            padding: 12px 100px 12px 20px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            &::placeholder {
+                color: #898f96;
+            }
+        }
+        button{
+            padding: 12px 20px 12px;
+            background-color: $blue;
+            border-radius: 25px;
+            color: #fff;
+            position: absolute;
+            right: -2px;
+        }
+
+    }
+}
+.search__title{
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+.breadcrumbs{
+    &__inner{
+        padding: 45px 0 40px;
+        overflow: hidden;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            &+li{
+                padding-left: 24px;
+                 &::before{
+                    content: '/';
+                    position: absolute;
+                    left: 8px;
+                    color: #fff;
+            }
+        }
+            &:last-child{
+                a,span{
+                    color: #fff;
+                }
+            }
+        }
+        a{
+            color: #fff;
+        }
+    }
+}
+
+
+//      join us
+
+.join-us{
+    background: rgb(13,62,242);
+    background: linear-gradient(90deg,rgba(102,30,144,1) 0%, rgba(64,48,201,1) 46%,rgba(13,62,242,1)   90%);
+    min-height: 400px;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+.join-us__title{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.join-us__subtitle{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.join-us__btn{
+    background-color: #fff;
+    padding: 20px 43px;
+    color: $blue;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+//      footer
+
 .footer {
     background-color: #262b30;
     color: #ababab;
 }
 
 .footer__inner {
-    padding: 120px 0;
+    padding: 100px 0;
     display: flex;
     justify-content: space-between;
 
@@ -284,3 +384,5 @@ button {
     height: 95px;
     line-height: 95px;
 }
+
+
