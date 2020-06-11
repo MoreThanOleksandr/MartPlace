@@ -7,25 +7,27 @@
 .header {
     background-color: #eef1f3;
 }
+
+.footer__inner-logo,
+.header__inner-logo {
+    display: flex;
+    align-items: center;
+    img {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+    font-weight: 700;
+    font-size: 30px;
+    span {
+        color: $blue;
+    }
+}
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
-    &-logo {
-        display: flex;
-        align-items: center;
-        img {
-            width: 50px;
-            height: 50px;
-            margin-right: 5px;
-        }
-        font-weight: 700;
-        font-size: 30px;
-        span {
-            color: $blue;
-        }
-    }
     &-btn {
         color: #fff;
         background-color: $blue;
@@ -816,19 +818,7 @@
         }
     }
 }
-.Overlay {
-    background-image: -moz-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
-    background-image: -webkit-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
-    background-image: -ms-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
-    opacity: 0.902;
-    position: absolute;
-    left: 0px;
-    top: 9237px;
-    width: 1920px;
-    height: 400px;
-    z-index: 63;
-  }
-  
+
 .join-us{
     background: rgb(13,62,242);
     background: linear-gradient(90deg,rgba(102,30,144,1) 0%, rgba(64,48,201,1) 46%,rgba(13,62,242,1)   90%);
