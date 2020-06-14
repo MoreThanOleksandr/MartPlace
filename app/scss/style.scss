@@ -1511,7 +1511,7 @@
                 color: #898f96;
             }
         }
-        button {
+        button  {
             padding: 15px 47px;
             font-size: 15px;
             font-weight: 500;
@@ -1540,4 +1540,15 @@
     border-bottom: 1px solid #e8ebf0;
 }
 
+//          404
+
+.page__404{
+    text-align: center;
+    padding: 80px 0 100px;
+}
+.page__404-text{
+    font-size: 30px;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
 @import "media";

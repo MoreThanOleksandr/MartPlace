@@ -73,6 +73,15 @@ button {
     padding: 0 15px;
 }
 
+.blue__btn {
+    padding: 15px 47px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: $blue;
+    border-radius: 35px;
+}
+
 .features-slider,
 .newest__products {
     padding: 120px 0;
@@ -121,21 +130,20 @@ button {
     margin-bottom: 50px;
 }
 
-
 //      search
-.search{
-    background: rgb(13,62,242);
-    background: linear-gradient(90deg,rgba(102,30,144,1) 0%, rgba(64,48,201,1) 46%,rgba(13,62,242,1)   90%);
+.search {
+    background: rgb(13, 62, 242);
+    background: linear-gradient(90deg, rgba(102, 30, 144, 1) 0%, rgba(64, 48, 201, 1) 46%, rgba(13, 62, 242, 1) 90%);
     padding: 85px 0 30px;
 }
-.search__inner{
+.search__inner {
     text-align: center;
-    form{
+    form {
         margin: 0 auto;
         max-width: 555px;
         width: 100%;
         position: relative;
-        input{
+        input {
             width: 100%;
             padding: 12px 100px 12px 20px;
             border-radius: 25px;
@@ -145,7 +153,7 @@ button {
                 color: #898f96;
             }
         }
-        button{
+        button {
             padding: 12px 20px 12px;
             background-color: $blue;
             border-radius: 25px;
@@ -153,79 +161,75 @@ button {
             position: absolute;
             right: -2px;
         }
-
     }
 }
-.search__title{
+.search__title {
     font-size: 26px;
     color: #fff;
     margin-bottom: 35px;
 }
-.breadcrumbs{
-    &__inner{
+.breadcrumbs {
+    &__inner {
         padding: 45px 0 40px;
         overflow: hidden;
     }
-    &__list{
-        li{
+    &__list {
+        li {
             display: inline-block;
             position: relative;
-            &+li{
+            & + li {
                 padding-left: 24px;
-                 &::before{
-                    content: '/';
+                &::before {
+                    content: "/";
                     position: absolute;
                     left: 8px;
                     color: #fff;
+                }
             }
-        }
-            &:last-child{
-                a,span{
+            &:last-child {
+                a,
+                span {
                     color: #bfcad7;
                 }
             }
         }
-        a{
+        a {
             color: #fff;
             font-size: 15px;
         }
     }
 }
 
-.page__title{
-    background: rgb(13,62,242);
-    background: linear-gradient(90deg,rgba(102,30,144,1) 0%, rgba(64,48,201,1) 46%,rgba(13,62,242,1)   90%);
+.page__title {
+    background: rgb(13, 62, 242);
+    background: linear-gradient(90deg, rgba(102, 30, 144, 1) 0%, rgba(64, 48, 201, 1) 46%, rgba(13, 62, 242, 1) 90%);
     padding: 52px 0;
-    .title{
+    .title {
         font-size: 30px;
         font-weight: 500;
         color: #fff;
     }
 }
 
-
-
-
-
 //      join us
 
-.join-us{
-    background: rgb(13,62,242);
-    background: linear-gradient(90deg,rgba(102,30,144,1) 0%, rgba(64,48,201,1) 46%,rgba(13,62,242,1)   90%);
+.join-us {
+    background: rgb(13, 62, 242);
+    background: linear-gradient(90deg, rgba(102, 30, 144, 1) 0%, rgba(64, 48, 201, 1) 46%, rgba(13, 62, 242, 1) 90%);
     min-height: 400px;
     text-align: center;
     padding: 100px 0;
     color: #fff;
 }
-.join-us__title{
+.join-us__title {
     font-size: 36px;
     margin-bottom: 30px;
 }
-.join-us__subtitle{
+.join-us__subtitle {
     font-size: 18px;
     margin-bottom: 50px;
 }
-.join-us__btn{
+.join-us__btn {
     background-color: #fff;
     padding: 20px 43px;
     color: $blue;
@@ -311,9 +315,9 @@ button {
 }
 .footer__social-links {
     margin-top: 47px;
-    li{
+    li {
         display: inline-block;
-        &+li{
+        & + li {
             margin-left: 4px;
         }
     }
@@ -334,54 +338,54 @@ button {
             transform: translate(-50%, -50%);
         }
     }
-    .link-twitter{
+    .link-twitter {
         background-color: #19b2f5;
-        &::before{
+        &::before {
             content: "\ea96";
         }
     }
-    .link-google{
+    .link-google {
         background-color: #f05b44;
-        &::before{
+        &::before {
             content: "\ea88";
         }
     }
-    .link-pinterest{
+    .link-pinterest {
         background-color: #9c0c1c;
-        &::before{
+        &::before {
             content: "\ead1";
         }
     }
-    .link-linkedin{
+    .link-linkedin {
         background-color: #0da6be;
-        &::before{    
+        &::before {
             content: "\eaca";
         }
     }
-    .link-dribbble{
+    .link-dribbble {
         background-color: #ea4c89;
-        &::before{
+        &::before {
             content: "\eaa7";
         }
     }
 }
-.footer__form{
+.footer__form {
     position: relative;
-    form{
+    form {
         margin-top: 35px;
     }
-    input{
+    input {
         width: 100%;
         padding: 17px 120px 15px 30px;
         border-radius: 25px;
         color: #000;
         border: none;
         font-size: 15px;
-        &::placeholder{
+        &::placeholder {
             color: #ababab;
         }
     }
-    button{
+    button {
         border: none;
         position: absolute;
         padding: 17px 30px 15px;
@@ -399,5 +403,3 @@ button {
     height: 95px;
     line-height: 95px;
 }
-
-
