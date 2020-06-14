@@ -181,15 +181,30 @@ button {
         }
             &:last-child{
                 a,span{
-                    color: #fff;
+                    color: #bfcad7;
                 }
             }
         }
         a{
             color: #fff;
+            font-size: 15px;
         }
     }
 }
+
+.page__title{
+    background: rgb(13,62,242);
+    background: linear-gradient(90deg,rgba(102,30,144,1) 0%, rgba(64,48,201,1) 46%,rgba(13,62,242,1)   90%);
+    padding: 52px 0;
+    .title{
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+    }
+}
+
+
+
 
 
 //      join us
