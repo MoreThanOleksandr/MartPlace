@@ -24,6 +24,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-arrow-right:before {
+  content: "\e904";
+}
+.icon-arrow-left:before {
+  content: "\e905";
+}
 .icon-cart:before {
   content: "\e901";
 }
