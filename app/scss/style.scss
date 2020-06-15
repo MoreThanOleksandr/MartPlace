@@ -85,20 +85,20 @@
                 margin-right: 20px;
                 font-family: "icomoon";
             }
-            &:hover{
+            &:hover {
                 background-color: $blue;
                 color: #fff;
-                &::before{
+                &::before {
                     color: #fff;
                 }
             }
         }
-        &:hover{
+        &:hover {
             display: block;
         }
     }
-    &:hover{
-        ul{
+    &:hover {
+        ul {
             display: block;
         }
     }
@@ -138,7 +138,7 @@
 }
 
 .header__inner-bar {
-    margin-right: 50px;
+    margin-right: 20px;
     height: 100px;
     padding-top: 40px;
     a {
@@ -196,7 +196,9 @@
         }
     }
 }
-
+.cart__box{
+    padding-right: 45px;
+}
 .circle__menu {
     display: none;
     position: absolute;
@@ -320,6 +322,77 @@
     }
 }
 
+.cart__menu {
+    width: 400px;
+    padding: 0;
+    .circle__item {
+        border-top: none;
+        border-bottom: 1px solid #e8ebf0;
+        padding: 20px 25px;
+    }
+    .circle__item-content {
+        padding-right: 0;
+    }
+    .product-item__price {
+        margin-right: 0;
+        padding: 5px 8px;
+    }
+}
+.circle__item-price {
+    text-align: center;
+}
+.cart__item-delete {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #f1ecf9;
+    position: relative;
+    &::before {
+        content: "\e912";
+        font-family: "icomoon";
+        position: absolute;
+        font-size: 15px;
+        color: #818c98;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.cart__item-image {
+    img {
+        width: 80px;
+        height: 70px;
+        margin-right: 11px;
+    }
+}
+.cart__item-title {
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.cart__menu-total {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 22px 25px 0;
+    text-align: right;
+    span {
+        margin-left: 20px;
+    }
+}
+.cart__menu-links {
+    display: flex;
+    justify-content: space-between;
+    a {
+        width: 50%;
+        background-color: $purple;
+        line-height: 60px;
+        color: #fff;
+        text-align: center;
+    }
+    .cart__menu-links__checkout{
+        background-color: $blue;
+    }
+}
 //          header menu
 
 .header__bottom-inner {
@@ -360,6 +433,7 @@
 }
 .header__menu {
     height: 80px;
+    position: relative;
     li {
         display: inline-block;
         position: relative;
@@ -419,22 +493,63 @@
                 }
             }
         }
+        .mega__menu{
+            position: absolute;
+            top: 80px;
+            background-color: #fff;
+            width: 1140px;
+            left: -460px;
+            z-index: 1;
+            padding: 30px 0;
+            display: none;
+            justify-content: space-between;
+            border-top: 1px solid $blue;
+            a{
+                color: #54667a;
+                text-transform: none;
+                line-height: 42px;
+            }
+            .mega__menu-list{
+                a{
+                    display: block;
+                    padding-left: 5px;
+                    &:hover{
+                        background-color: $blue;
+                        color: #fff;
+                    }
+                }
+            }
+            &:hover{
+                display: flex;
+            }
+        }
     }
 }
-.Rectangle_258 {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 608px;
-    top: 181px;
-    width: 270px;
-    height: 440px;
-    z-index: 380;
+.mega__menu-2row{
+    padding: 0 27px;
+    .mega__menu-list{
+        column-count: 2;
+        column-width: max(200px);
+        a{
+            display: block;
+        }
+    }
+}
+.mega__menu-title{
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8ebf0;
+}
+.menu__pages{
+    &:hover{
+        .mega__menu{
+            display: flex;
+        }
+    }
 }
 
 //      Main
 
-.main {
-}
 
 .main__inner {
     @include bg_pack;
