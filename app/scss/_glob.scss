@@ -29,7 +29,8 @@ a {
     color: #f3f3f8;
 }
 ul,
-li {
+li,
+ol {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -81,7 +82,20 @@ button {
     background-color: $blue;
     border-radius: 35px;
 }
-
+.purple__btn{
+    padding: 15px 47px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: $purple;
+    border-radius: 35px;
+    &::before{
+        font-family: 'icomoon';
+        content: "\e901";
+        color: #fff;
+        padding-right: 10px;
+    }
+}
 .features-slider,
 .newest__products {
     padding: 120px 0;
@@ -313,7 +327,8 @@ button {
         }
     }
 }
-.footer__social-links {
+.footer__social-links,
+.aside__author-socials {
     margin-top: 47px;
     li {
         display: inline-block;

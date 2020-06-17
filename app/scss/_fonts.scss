@@ -24,6 +24,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-checkmark:before {
+  content: "\ea10";
+}
 .icon-trash:before {
   content: "\e912";
 }
