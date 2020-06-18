@@ -1696,10 +1696,6 @@
 
 //          registration form
 
-.registration__form {
-    background-color: #eff1f5;
-    padding: 80px 0 100px;
-}
 .registration__form-inner {
     max-width: 556px;
     width: 100%;
@@ -1767,14 +1763,9 @@
 }
 
 //          Single product page
-
-.single-product {
-    background-color: $bg;
-}
 .single-product__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 70px 0 120px;
 }
 .single-product__aside {
     max-width: 360px;
@@ -2176,8 +2167,6 @@
 //      favourites products
 
 .favourites__products{
-    background-color: #eff1f5;
-    padding: 80px 0 120px;
     .pagination{
         text-align: center;
         margin-top: 46px;
@@ -2194,4 +2183,91 @@
     }
 }
 
+//      login form page
+
+.login__form{
+    text-align: center;
+    p{
+        padding: 0 50px 60px;
+        text-align: left;
+        color: #898f96;
+        a{
+            color: $blue;
+        }
+    }
+}
+.login__form-inner{
+    max-width: 555px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    form{
+        padding: 30px 50px 40px;
+        text-align: left;
+        label{
+            display: block;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 5px;
+        }
+        input{
+            width: 100%;
+            background-color: #f4f5f8;
+            padding: 17px 20px;
+            border: none;
+            margin-bottom: 20px;
+            color: #000;
+            outline: none;
+        }
+        .jq-checkbox {
+            border: 2px solid #e6e9ed;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .jq-checkbox.checked {
+            width: 20px;
+            height: 20px;
+            background-color: $blue;
+            border: none;
+        }
+        .jq-checkbox.checked .jq-checkbox__div {
+            background-color: transparent;
+            text-align: center;
+            &::before {
+                content: "\ea10";
+                font-family: "icomoon";
+                position: absolute;
+                width: 20px;
+                color: #fff;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 12px;
+            }
+        }
+    }
+}
+.remember__me{
+    color: #555;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.login__form-title{
+    font-size: 26px;
+    line-height: 28px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8ebf0;
+    span{
+        display: block;
+        font-size: 16px;
+        line-height: 28px;
+        color: #555;
+        padding-top: 10px;
+    }
+}
+.login__password{
+    padding-right: 25px;
+}
 @import "media";

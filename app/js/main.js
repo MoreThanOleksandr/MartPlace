@@ -46,7 +46,7 @@ $(function(){
         return false;
     });
 
-    $('select,input[type="radio"]').styler();
+    $('select,input[type="radio"],input[type="checkbox"]').styler();
 
     var mixer = mixitup('.newest__products-inner,.products__content-inner');
 })
