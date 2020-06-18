@@ -2270,4 +2270,113 @@
 .login__password{
     padding-right: 25px;
 }
+
+//      pricing page
+
+.pricing-title{
+    margin-top: 40px;
+    line-height: 36px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+    span{
+        color: $blue;
+    }
+}
+.pricing-subtitle{
+    line-height: 30px;
+    color: #555;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 675px;
+    width: 100%;
+}
+.pricing__inner{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-item{
+    padding: 30px;
+    background-color: #fff;
+    border-top: 3px solid #ff6a6c;
+    max-width: 360px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+.pricing-item__bussines{
+    border-top: 3px solid $blue;
+    .pricing-item__btn{
+        background-color: $blue;
+    }
+}
+.pricing-item__agency{
+    border-top: 3px solid #feb71d;
+    .pricing-item__btn{
+        background-color: #feb71d;
+    }
+}
+.pricing-item__title{
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #e8ebf0;
+}
+.pricing-item__price{
+    margin-top: 30px;
+    font-size: 36px;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    span{
+        font-size: 18px;
+        position: absolute;
+        top: -5px;
+        left: 67px;
+    }
+    .price-per-month{
+        font-size: 16px;
+        color: #555;
+        position: static;
+    }
+}
+.pricing-item__list{
+    li{
+        line-height: 36px;
+        color: #555;
+        padding-left: 24px;
+        position: relative;
+        span{
+            font-weight: 500;
+            color: #000;
+        }
+        &::before{
+            content: "";
+            border: 4px solid #c5cad4;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+}
+.pricing-item__btn{
+    margin-top: 30px;
+    background-color: #ff6a6c;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 18px;
+    padding: 18px 0;
+}
+
+
 @import "media";
