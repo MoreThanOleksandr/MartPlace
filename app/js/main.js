@@ -22,6 +22,7 @@ $(function(){
     $('.rate__star').rateYo({
         rating: 4.5,
         starWidth: "12px",
+        normalFill: "#ececec",
         readOnly: true
     });
 
