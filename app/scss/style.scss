@@ -2378,5 +2378,42 @@
     padding: 18px 0;
 }
 
+//       recover password
+
+.recover-inner{
+    margin: 0 auto;
+    max-width: 555px;
+    width: 100%;
+    background-color: #fff;
+    padding: 60px 0;
+    form{
+        padding: 35px 50px 0;
+        label{
+            display: block;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 11px;
+        }
+        input{
+            background-color: #f4f5f8;
+            width: 100%;
+            color: #000;
+            border: none;
+            padding: 18px 20px 20px;
+            outline: none;
+            margin-bottom: 33px;
+            &::placeholder{
+                color: #898f96;
+            }
+        }
+    }
+}
+.recover-inner__text{
+    color: #555;
+    padding: 0 50px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8ebf0;
+}
 
 @import "media";
