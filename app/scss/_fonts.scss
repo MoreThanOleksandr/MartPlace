@@ -24,6 +24,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-phone-handset:before {
+  content: "\e915";
+}
+.icon-map-marker:before {
+  content: "\e916";
+}
 .icon-clock:before {
   content: "\e914";
 }
