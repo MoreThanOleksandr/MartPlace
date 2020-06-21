@@ -24,7 +24,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-clock:before {
+  content: "\e914";
+}
+.icon-eye:before {
+  content: "\e913";
+}
 .icon-checkmark:before {
   content: "\ea10";
 }

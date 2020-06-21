@@ -400,32 +400,41 @@
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
-
-    .header__search {
-        position: relative;
-        input {
-            width: 360px;
-            border: 1px solid #d9dfe5;
-            padding: 12px 90px 12px 20px;
-            border-radius: 25px;
-            outline: none;
-            &::placeholder {
-                color: #898f96;
+}
+.header__search {
+    position: relative;
+    input {
+        width: 360px;
+        border: 1px solid #d9dfe5;
+        padding: 12px 90px 12px 20px;
+        border-radius: 25px;
+        outline: none;
+        &::placeholder {
+            color: #898f96;
+        }
+    }
+    button {
+        outline: none;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        background-color: $blue;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 25px 11px;
+        transition: all .3s;
+        svg {
+            width: 16px;
+            height: 17px;
+            path {
+                fill: #fff;
             }
         }
-        button {
-            outline: none;
-            position: absolute;
-            right: 0;
-            background-color: $blue;
-            border: none;
-            border-radius: 25px;
-            padding: 12px 25px;
-            svg {
-                width: 16px;
-                height: 17px;
-                path {
-                    fill: #fff;
+        &:hover{
+            background-color: #edf5fe;
+            svg{
+                path{
+                    fill: $blue;
                 }
             }
         }
@@ -513,6 +522,7 @@
                 a {
                     display: block;
                     padding-left: 5px;
+                    transition: all .3s;
                     &:hover {
                         background-color: $blue;
                         color: #fff;
@@ -2416,4 +2426,245 @@
     border-bottom: 1px solid #e8ebf0;
 }
 
+//      blog V2
+
+.blog-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-post{
+    background-color: #fff;
+    max-width: 750px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    span{
+        color: #898f96;
+    }
+    .blue__btn{
+        margin: 0 30px 40px;
+    }
+}
+.blog-item__image{
+    img{
+        width: 750px;
+        height: 430px;
+    }
+}
+.blog-post__title-box{
+    width: 100%;
+    padding: 40px 30px;
+    border-bottom: 1px solid #ececec;
+}
+.blog-post__title{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 36px;
+    &:hover{
+        color: $blue;
+    }
+}
+.blog-post__author{
+        color: $blue;
+        span{
+            margin-right: 5px;
+        }
+}
+.blog-post__author,
+.blog-post__date,
+.blog-post__views,
+.blog-post__comments{
+    padding-left: 27px;
+    position: relative;
+    margin-right: 30px;
+    &::before{
+        font-family: 'icomoon';
+        content: "\e911";
+        color: #898f96;
+        font-size: 15px;
+        position: absolute;
+        left: 0;
+    }
+}
+.blog-post__date::before{
+    content: "\e914";
+}
+.blog-post__views::before{
+    content: "\e913";
+}
+.blog-post__comments::before{
+    content: "\e902";
+}
+.blog-post__text{
+    padding: 30px;
+    color: #555;
+    line-height: 30px;
+}
+
+//      blog aside
+.blog-aside{
+    max-width: 360px;
+    width: 100%;
+}
+.blog-aside__item{
+    max-width: 360px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    .header__search{
+        text-align: center;
+        input{
+            max-width: 310px;
+        }
+        button{
+            right: 26px;
+        }
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    &+.blog-aside__item{
+        margin-top: 30px;
+    }
+    a{
+        color: #000;
+    }
+    .tabs .tab{
+        border: none;
+        border-bottom: 1px solid #e8ebf0;
+    }
+    .tab__content{
+        padding: 22px 26px 20px;
+        max-width: 100%;
+        border: none;
+    }
+    .category__list{
+        padding: 30px 23px 40px;
+        span{
+            color: #747b86;
+        }
+    }
+}
+.blog-aside__title{
+    padding: 30px 25px;
+    font-size: 20px;
+    line-height: 32px;
+    border-bottom: 1px solid #e8ebf0;
+}
+.tab-item__post{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8ebf0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &:last-child{
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    img{
+        margin-right: 15px;
+        width: 70px;
+        height: 70px;
+    }
+}
+.tab-item__text{
+    font-weight: 500;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.blog-aside__tags{
+    padding: 30px 23px 40px;
+    a{
+        color: $blue;
+        padding: 7px 11px;
+        background-color: #edf5fe;
+        border-radius: 20px;
+        margin-bottom: 12px;
+        &.active{
+            background-color: $blue;
+            color: #fff;
+        }
+        &+a{
+            margin-left: 2px;
+        }
+    }
+}
+.blog-aside__banner{
+    width: 360px;
+    height: 270px;
+}
+
+//      how it work page
+
+.how__title{
+    text-align: center;
+    padding: 65px 0 30px;
+    span{
+        display: block;
+    }
+    .title{
+        margin-top: 26px;
+    }
+    .subtitle{
+        font-weight: 300;
+    }
+    .breadcrumbs__inner{
+        padding-bottom: 0;
+        padding-top: 61px;
+    }
+}
+
+.how__item{
+    &:nth-child(2n+1){
+        background-color: #eff1f5;
+    }
+}
+.how__item-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px 0;
+}
+.how__item-image{
+    width: 458px;
+    height: 352px;
+}
+.how__item-content{
+    max-width: 450px;
+}
+.how__item-title{
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 35px;
+}
+.how__item-text{
+    color: #555;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.Rectangle_237 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 410px;
+    top: 1377px;
+    width: 170px;
+    height: 50px;
+    z-index: 96;
+  }
+.how__item-btn{
+    padding: 15px 47px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $blue;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    &:hover{
+        background-color: $blue;
+        color: #fff;
+    }
+}
 @import "media";
