@@ -1,0 +1,123 @@
+@media (max-width: 1500px) {
+    .user__box {
+        ul {
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .message__menu {
+        right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main__form form {
+        display: none;
+    }
+    .buttons {
+        display: block;
+    }
+    .mega__menu--media{
+        display: none !important;
+    }
+}
+@media (max-width: 1000px) {
+    .container{
+        padding: 0 5px;
+    }
+    .menu__btn {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        margin-top: 28px;
+        div {
+            background-color: #7e8fa1;
+            height: 3px;
+            & + div {
+                margin-top: 5px;
+            }
+        }
+    }
+    .menu__list {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        top: 180px;
+        text-align: center;
+        z-index: 1;
+        li {
+            display: block;
+            border-top: 1px solid #ececec;
+            &+li{
+                margin-left: 0;
+            }
+        }
+        a {
+            display: block;
+        }
+    }
+    .header__menu{
+        position: unset;
+        li ul{
+            position: unset;
+            width: 100%;
+            padding: 0;
+        }
+    }
+    .footer__inner{
+        display: block;
+    }
+    .footer__col-about{
+        max-width: 100%;
+    }
+    .footer__col-menu{
+        display: inline-block;
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header__inner-btn{
+        display: none;
+    }
+    .header__inner-bar{
+        margin-right: 0;
+    }
+    .cart__box{
+        padding-right: 15px;
+    }
+    .user__box-name{
+        margin-left: 5px;
+    }
+    .user__box{
+        margin-right: 0;
+    }
+}
+@media (max-width: 700px) {
+    .header__inner-bar{
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .logo__text{
+        display: none;
+    }
+    .notification__box, .message__box, .cart__box{
+        padding: 0 10px;
+    }
+    .header__search input{
+        width: 230px;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    .menu__list {
+        display: block !important;
+    }
+}

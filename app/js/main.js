@@ -26,6 +26,34 @@ $(function(){
         readOnly: true
     });
 
+    $('.menu__btn').on('click', function () {
+        $('.menu__list').slideToggle();
+    });
+    $('.user__box').on('click', function () {
+        $('.user__list').slideToggle();
+    });
+    $('.notification__box').on('click', function () {
+        $('.notification__menu').slideToggle();
+    });
+    $('.message__box').on('click', function () {
+        $('.message__menu').slideToggle();
+    });
+    $('.cart__box').on('click', function () {
+        $('.cart__menu').slideToggle();
+    });
+    $('.menu__list-home').on('click', function () {
+        $('.menu__sublist-home').slideToggle();
+    });
+    $('.menu__list-all').on('click', function () {
+        $('.menu__sublist-all').slideToggle();
+    });
+    $('.menu__list-wordpress').on('click', function () {
+        $('.menu__sublist-wordpress').slideToggle();
+    });
+    $('.menu__pages').on('click', function () {
+        $('.mega__menu').slideToggle();
+    });
+
     $('.list-btn').on('click', function () {
         $('.products__content-inner').addClass('list');
         $('.list-btn').addClass('active')

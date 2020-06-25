@@ -9,6 +9,8 @@ html {
 html,
 body {
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -288,7 +290,7 @@ button {
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     line-height: 28px;
     a {
         color: #ababab;
