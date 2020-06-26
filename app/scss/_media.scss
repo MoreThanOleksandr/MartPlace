@@ -20,10 +20,14 @@
 }
 
 @media (max-width: 1200px) {
+    .blue__btn{
+        padding: 10px 27px;
+    }
     .benefits,
     .statistics,
     .feedback,
-    .news {
+    .news,
+    .contacts {
         padding: 40px 0;
     }
     .section__bottom-subtitle {
@@ -92,6 +96,66 @@
     .feedback__link {
         margin-top: 20px;
     }
+    .breadcrumbs__inner{
+        padding: 0 0 20px;
+    }
+    .blog-inner{
+        display: block;
+    }
+    .blog-post{
+        max-width: 100%;
+    }
+    .blog-post__image img{
+        width: 100%;
+    }
+    .blog-posts{
+        margin-bottom: 20px;
+    }
+    .blog-aside__title{
+        padding: 15px 20px;
+    }
+    .blog-aside{
+        max-width: 100%;
+    }
+    .blog-aside__item{
+        max-width: 100%;
+        .header__search input{
+            max-width: 100%;
+            width: calc(100% - 50px);
+        }
+        .tabs .tab{
+            padding: 15px 0;
+        }
+    }
+    .tab-item__post{
+        justify-content: flex-start;
+    }
+    .tab-item__text{
+        display: block;
+    }
+    .blog-aside__banner{
+        width: 100%;
+    }
+    .contact__title{
+        padding: 50px 0;
+    }
+    .contacts__icon{
+        max-width: 100%;
+        &+.contacts__icon{
+            margin-left: 10px;
+        }
+        padding: 70px 30px 30px;
+        &::before{
+            top: 25px;
+            font-size: 30px;
+        }
+    }
+    .contacts__form-title{
+        padding: 20px 0;
+    }
+    .contacts__form form{
+        padding: 20px 100px 30px;
+    }
 }
 @media (max-width: 1150px) {
     .features-inner {
@@ -156,6 +220,7 @@
         top: 180px;
         text-align: center;
         z-index: 1;
+        border-bottom: 1px solid #ececec;
         li {
             display: block;
             border-top: 1px solid #ececec;
@@ -206,6 +271,12 @@
     .footer__copy{
         height: auto;
     }
+    .contacts__form-col1{
+        margin-right: 10px;
+    }
+    .contacts__form form{
+        padding: 20px 30px 30px;
+    }
 }
 @media (max-width: 960px) {
     .features-product {
@@ -253,6 +324,9 @@
     }
 }
 @media (max-width: 850px) {
+    .header__menu li a{
+        line-height: 60px;
+    }
     .newest__products-inner {
         .product-item {
             flex-basis: calc(100%);
@@ -289,6 +363,18 @@
         font-size: 14px;
     }
 }
+@media (max-width: 800px) {
+    .contacts__icons{
+        display: block;
+    }
+    .contacts__icon+.contacts__icon{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .contacts__icon-title{
+        margin-bottom: 0;
+    }
+}
 @media (max-width: 750px) {
     .feed-slider__inner {
         .slick-slide + .slick-slide {
@@ -304,6 +390,19 @@
         & + .support-icons__item {
             margin-top: 10px;
         }
+    }
+    .page__404{
+        padding: 30px 40px;
+    }
+    .page__404-image{
+        img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+    .page__404-text{
+        font-size: 26px;
+        margin-bottom: 0px;
     }
 }
 @media (max-width: 700px) {
@@ -325,7 +424,8 @@
         padding: 0 10px;
     }
     .header__search input {
-        width: 230px;
+        width: 240px;
+        padding: 13px 85px 13px 15px;
     }
     .section-title__top {
         min-height: 80px;
@@ -376,6 +476,47 @@
     }
     .join-us__subtitle {
         font-size: 16px;
+    }
+    .blog-post__title{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .blog-post__image img{
+        height: 280px;
+    }
+    .blog-post__title-box,
+    .blog-post__text{
+        padding: 20px 15px;
+    }
+    .blog-post .blue__btn{
+        margin: 0 15px 20px;
+    }
+    .blog-post__author, .blog-post__date, .blog-post__views, .blog-post__comments{
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+    .blog-post__author{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .pagination__list a, .pagination__list span{
+        width: 40px;
+    }
+    .contacts__title{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .contacts__info{
+        margin-bottom: 20px;
+    }
+    .contacts__form form .contacts__form-col1 input{
+        padding-left: 15px;
+    }
+    .contacts__form form input{
+        padding: 14px 10px 15px;
+    }
+    .contacts__form form textarea{
+        padding: 15px;
     }
 }
 @media (max-width: 450px) {
