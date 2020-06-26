@@ -753,9 +753,8 @@
     justify-content: space-between;
     background-color: #fff;
     &__image {
-        max-width: 555px;
+        width: 555px;
         height: 450px;
-        @include bg_pack;
     }
     &__info {
         padding: 50px 50px 20px;
@@ -785,7 +784,7 @@
             line-height: 30px;
             color: $grey;
             background-color: #f1f3f6;
-            border-radius: 12px;
+            border-radius: 20px;
             padding: 0 20px;
             & + a {
                 margin-left: 3px;
@@ -895,9 +894,12 @@
 .newest__products-filtr {
     color: #747b86;
     line-height: 21px;
-    &__btn {
+}
+.newest__products-filtr__btn {
         height: 21px;
         cursor: pointer;
+        margin-left: 15px;
+        transform: translateY(20%);
         span {
             width: 4px;
             height: 4px;
@@ -908,8 +910,6 @@
             }
         }
     }
-}
-
 .newest__products-category {
     background-color: #fff;
     min-height: 92px;
@@ -1157,8 +1157,6 @@
 
 //      feedback (index)
 
-.feedback {
-}
 .feedback__inner {
     display: flex;
     justify-content: space-between;
