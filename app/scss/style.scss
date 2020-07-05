@@ -63,47 +63,47 @@
             font-weight: 400;
         }
     }
-    .user__list {
-        display: none;
-        position: absolute;
-        width: 270px;
-        top: 100px;
-        background-color: #fff;
-        padding: 20px;
-        z-index: 1;
-        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-        border-top: 1px solid $blue;
-        z-index: 2;
-        a {
-            color: #54667a;
-            line-height: 44px;
-            position: relative;
-            padding-left: 40px;
-            display: block;
-            &::before {
-                position: absolute;
-                left: 5px;
-                font-size: 15px;
-                color: #54667a;
-                margin-right: 20px;
-                font-family: "icomoon";
-            }
-            &:hover {
-                background-color: $blue;
-                color: #fff;
-                &::before {
-                    color: #fff;
-                }
-            }
-        }
-        // &:hover {
-        //     display: block;
-        // }
-    }
+
     // &:hover {
     //     ul {
     //         display: block;
     //     }
+    // }
+}
+.user__list {
+    display: none;
+    position: absolute;
+    width: 270px;
+    top: 100px;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 22;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    border-top: 1px solid $blue;
+    a {
+        color: #54667a;
+        line-height: 44px;
+        position: relative;
+        padding-left: 40px;
+        display: block;
+        &::before {
+            position: absolute;
+            left: 5px;
+            font-size: 15px;
+            color: #54667a;
+            margin-right: 20px;
+            font-family: "icomoon";
+        }
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+            &::before {
+                color: #fff;
+            }
+        }
+    }
+    // &:hover {
+    //     display: block;
     // }
 }
 .user__box-profile::before {
@@ -213,7 +213,7 @@
     background-color: #fff;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     border-top: 1px solid $blue;
-    z-index: 2;
+    z-index: 21;
     width: 370px;
     padding: 0 25px;
 }
@@ -896,20 +896,20 @@
     line-height: 21px;
 }
 .newest__products-filtr__btn {
-        height: 21px;
-        cursor: pointer;
-        margin-left: 15px;
-        transform: translateY(20%);
-        span {
-            width: 4px;
-            height: 4px;
-            background-color: #ababab;
-            border-radius: 50%;
-            & + span {
-                margin-top: 4px;
-            }
+    height: 21px;
+    cursor: pointer;
+    margin-left: 15px;
+    transform: translateY(20%);
+    span {
+        width: 4px;
+        height: 4px;
+        background-color: #ababab;
+        border-radius: 50%;
+        & + span {
+            margin-top: 4px;
         }
     }
+}
 .newest__products-category {
     background-color: #fff;
     min-height: 92px;
@@ -977,7 +977,8 @@
         padding: 25px 30px;
         border-bottom: 1px solid #ececec;
     }
-    &__text {
+    &__text,
+    &__text--grid {
         line-height: 30px;
         overflow: hidden;
     }
@@ -1307,9 +1308,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
     button {
         color: #000;
         font-size: 16px;
+        line-height: 30px;
         &.mixitup-control-active {
             color: $blue;
         }
@@ -1491,6 +1494,11 @@
             background-color: $blue;
             border-radius: 25px;
             color: #fff;
+            transition: all .5s;
+            &:hover{
+                background-color: #edf5fe;
+                color: $blue;
+            }
         }
     }
 }
@@ -1604,7 +1612,8 @@
     }
 }
 
-.products__content-inner.list {
+.products__content-inner.list,
+.favourites__products-inner.list {
     display: block;
     .product-item {
         display: flex;
@@ -1782,6 +1791,11 @@
             background-color: $blue;
             border-radius: 35px;
             margin-top: 15px;
+            transition: all .5s;
+            &:hover{
+                background-color: #edf5fe;
+                color: $blue;
+            }
         }
     }
     span {
@@ -1971,6 +1985,7 @@
 }
 .tab-item__title {
     font-size: 28px;
+    line-height: 28px;
     margin-bottom: 42px;
 }
 .tab-item__subtitle {
@@ -2233,9 +2248,48 @@
     .product-item {
         flex-basis: calc(33.3333% - 30px);
         margin-left: 30px;
+        &__text--list {
+            display: none;
+        }
     }
 }
+.favourites__products .favourites__products-inner.list {
+    .product-item {
+        &__title-box {
+            max-width: 100%;
+        }
+        &__subtitle-box {
+            margin-top: 0;
+            .product-item__author {
+                margin-bottom: 30px;
+            }
+        }
+        &__text--grid {
+            display: none;
+        }
+        &__text--list {
+            display: block;
+        }
 
+        &__price-box {
+            display: block;
+            padding: 30px 30px;
+        }
+        &__price {
+            margin-bottom: 35px;
+        }
+        &__likes {
+            margin-bottom: 10px;
+        }
+        &__stars {
+            .rate__star {
+                right: 41px;
+                bottom: 30px;
+                top: auto;
+            }
+        }
+    }
+}
 //      login form page
 
 .login__form {
@@ -2381,17 +2435,18 @@
     border-bottom: 1px solid #e8ebf0;
 }
 .pricing-item__price {
-    margin-top: 30px;
-    font-size: 36px;
-    line-height: 32px;
     text-align: center;
-    position: relative;
-    margin-bottom: 30px;
+        margin: 30px auto;
+    .price__number {
+        font-size: 36px;
+        line-height: 32px;
+        position: relative;
+    }
     span {
         font-size: 18px;
         position: absolute;
-        top: -5px;
-        left: 67px;
+        left: -15px;
+        top: 0;
     }
     .price-per-month {
         font-size: 16px;
@@ -2841,7 +2896,7 @@
 //      terms
 
 .terms {
-    padding: 60px 120px;
+    padding: 60px 0 120px;
     background-color: $bg;
 }
 .terms__inner {

@@ -70,12 +70,12 @@ $(function(){
     });
 
     $('.list-btn').on('click', function () {
-        $('.products__content-inner').addClass('list');
+        $('.products__content-inner , .favourites__products-inner').addClass('list');
         $('.list-btn').addClass('active')
         $('.grid-btn').removeClass('active');
     });
     $('.grid-btn').on('click', function () {
-        $('.products__content-inner').removeClass('list')
+        $('.products__content-inner , .favourites__products-inner').removeClass('list')
         $('.grid-btn').addClass('active')
         $('.list-btn').removeClass('active');
     });
